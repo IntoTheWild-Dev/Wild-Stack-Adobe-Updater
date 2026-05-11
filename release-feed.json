@@ -1,0 +1,28 @@
+{
+  "feedVersion": 1,
+  "updatedAt": "2026-04-20T00:00:00Z",
+  "plugins": [
+    {
+      "id": "com.wildagency.aestackcompswap",
+      "name": "Wild Stack AE Comp Swap",
+      "description": "Swap compositions in After Effects with a single click.",
+      "host": "aftereffects",
+      "currentVersion": "1.0.0",
+      "minimumHostVersion": "22.0",
+      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/ae-v1.0.0/WildStackAECompSwap.zip",
+      "sha256": "REPLACE_WITH_SHA256",
+      "releaseNotes": "Initial release of Wild Stack AE Comp Swap."
+    },
+    {
+      "id": "com.wildagency.idstackautoupdate",
+      "name": "Wild Stack ID Auto Update",
+      "description": "Auto-update InDesign documents from a CSV or JSON data source.",
+      "host": "indesign",
+      "currentVersion": "1.0.0",
+      "minimumHostVersion": "18.0",
+      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/id-v1.0.0/WildStackIDAutoUpdate.zip",
+      "sha256": "REPLACE_WITH_SHA256",
+      "releaseNotes": "Initial release of Wild Stack ID Auto Update."
+    }
+  ]
+}
