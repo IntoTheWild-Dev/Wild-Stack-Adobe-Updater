@@ -1,0 +1,21 @@
+# Build artifacts
+.build/
+
+# Local test data
+.test-data/
+
+# macOS
+.DS_Store
+*.xcodeproj
+.xcuserdata
+
+# IDE
+.claude/
+.idea/
+.vscode/
+
+# Xcode workspace (SPM auto-generates)
+.swiftpm/
+
+# Sparkle framework (fetched by SPM)
+Sparkle.framework

@@ -1,0 +1,39 @@
+{
+  "feedVersion": 1,
+  "updatedAt": "2026-04-20T00:00:00Z",
+  "plugins": [
+    {
+      "id": "com.wildagency.aestackcompswap",
+      "name": "Wild Stack AE Comp Swap",
+      "description": "Swap compositions in After Effects with a single click.",
+      "host": "aftereffects",
+      "currentVersion": "1.0.0",
+      "minimumHostVersion": "22.0",
+      "downloadURL": "https://github.com/wildagency/wild-stack-plugins/releases/download/ae-v1.0.0/WildStackAECompSwap.zip",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256_OF_ZIP",
+      "releaseNotes": "Initial release."
+    },
+    {
+      "id": "com.wildagency.idstackautoupdate",
+      "name": "Wild Stack ID Auto Update",
+      "description": "Auto-update InDesign documents from a CSV or JSON data source.",
+      "host": "indesign",
+      "currentVersion": "1.0.0",
+      "minimumHostVersion": "18.0",
+      "downloadURL": "https://github.com/wildagency/wild-stack-plugins/releases/download/id-v1.0.0/WildStackIDAutoUpdate.zip",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256_OF_ZIP",
+      "releaseNotes": "Initial release."
+    },
+    {
+      "id": "com.wildstack.psassetswap",
+      "name": "Wild Stack PS Asset Swap",
+      "description": "Batch smart object and text replacement for Photoshop documents.",
+      "host": "photoshop",
+      "currentVersion": "1.0.0",
+      "minimumHostVersion": "22.0.0",
+      "downloadURL": "https://github.com/wildagency/wild-stack-plugins/releases/download/ps-v1.0.0/WildStackPSAssetSwap.zip",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256_OF_ZIP",
+      "releaseNotes": "Initial release."
+    }
+  ]
+}

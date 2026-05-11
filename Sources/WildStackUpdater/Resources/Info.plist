@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App identity -->
+    <key>CFBundleIdentifier</key>
+    <string>com.wildagency.WildStackUpdater</string>
+    <key>CFBundleName</key>
+    <string>Wild Stack Updater</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Sparkle: URL of the app's own appcast (self-update) -->
+    <key>SUFeedURL</key>
+    <string>https://intothewild-dev.github.io/Wild-Stack-Adobe-Updater/appcast.xml</string>
+
+    <!-- Sparkle: public key for EdDSA signature verification -->
+    <!-- Generate with: ./bin/generate_keys  (from the Sparkle distribution) -->
+    <!-- Then paste the public key string here -->
+    <key>SUPublicEDKey</key>
+    <string>32nmOUcszfNIk0H1H9/d1CVweL1sdgGdehf/diN8hLs=</string>
+
+    <!-- macOS minimum version -->
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <!-- App is agent (no Dock icon); set to false for a standard app -->
+    <key>LSUIElement</key>
+    <false/>
+
+    <!-- Human-readable copyright -->
+    <key>NSHumanReadableCopyright</key>
+    <string>© 2026 Wild Agency. All rights reserved.</string>
+</dict>
+</plist>
