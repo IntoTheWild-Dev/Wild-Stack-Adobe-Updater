@@ -19,3 +19,7 @@
 
 # Sparkle framework (fetched by SPM)
 Sparkle.framework
+
+# Backend
+backend/node_modules/
+backend/.wrangler/

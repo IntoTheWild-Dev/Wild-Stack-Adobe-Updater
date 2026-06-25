@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "wildstack-license-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-25",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wildstack-licenses",
+      "database_id": "04770942-aa77-4d57-8ec1-9d1264a5545e"
+    }
+  ]
+}

@@ -1,28 +1,39 @@
 {
   "feedVersion": 1,
-  "updatedAt": "2026-04-20T00:00:00Z",
+  "updatedAt": "2026-05-26T00:00:00Z",
   "plugins": [
     {
-      "id": "com.wildagency.aestackcompswap",
+      "id": "com.wildstack.aestackcompswap",
       "name": "Wild Stack AE Comp Swap",
-      "description": "Swap compositions in After Effects with a single click.",
+      "description": "Swap compositions and images in After Effects with a single click.",
       "host": "aftereffects",
-      "currentVersion": "1.0.0",
+      "currentVersion": "2.4.0",
       "minimumHostVersion": "22.0",
-      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/ae-v1.0.0/WildStackAECompSwap.zip",
-      "sha256": "REPLACE_WITH_SHA256",
-      "releaseNotes": "Initial release of Wild Stack AE Comp Swap."
+      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/ae-v2.4.0/WildStackAECompSwap.zip",
+      "sha256": "dae560a15fff8da173d48588d59d7cca6463458353beec8c74b4343595fe4cc8",
+      "releaseNotes": "Multi-layer select, 1-file-to-all-layers, uniform scale hero swap."
     },
     {
       "id": "com.wildagency.idstackautoupdate",
-      "name": "Wild Stack ID Auto Update",
-      "description": "Auto-update InDesign documents from a CSV or JSON data source.",
+      "name": "Wild Stack ID Asset Swap",
+      "description": "Swap images and text frames in InDesign from a CSV or JSON data source.",
       "host": "indesign",
       "currentVersion": "1.0.0",
       "minimumHostVersion": "18.0",
-      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/id-v1.0.0/WildStackIDAutoUpdate.zip",
-      "sha256": "REPLACE_WITH_SHA256",
-      "releaseNotes": "Initial release of Wild Stack ID Auto Update."
+      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/id-v1.0.0/WildStackIDAssetSwap.zip",
+      "sha256": "9e98730a0a4beb4fee8a6cd342b20422611284551b399bdb99021f2d7c6085a9",
+      "releaseNotes": "Initial release."
+    },
+    {
+      "id": "com.wildstack.psassetswap",
+      "name": "Wild Stack PS Asset Swap",
+      "description": "Replace smart object contents and text in Photoshop in bulk.",
+      "host": "photoshop",
+      "currentVersion": "1.0.0",
+      "minimumHostVersion": "24.0",
+      "downloadURL": "https://github.com/intothewild-dev/Wild-Stack-Adobe-Updater/releases/download/ps-v1.0.0/WildStackPSAssetSwap.zip",
+      "sha256": "1912716867a134a178f9a0b92b60d1d5abaa9e5a603999eb23ec321658fbd975",
+      "releaseNotes": "Initial release."
     }
   ]
 }

@@ -1,6 +1,6 @@
 # WildStackUpdater — Status & Roadmap
 
-**Last updated:** 11 May 2026
+**Last updated:** 25 June 2026
 
 ---
 
@@ -12,6 +12,14 @@
 - Auto-detects Adobe host apps (AE, ID, PS) — handles both direct `.app` and Creative Cloud wrapper folders
 - All 3 plugins appear with "Try Free" buttons in local test mode
 - License sheet with "Buy License" link works
+- License sheet now has a close/cancel button (X, top-right)
+
+### License Validation Backend: Live ✅
+- Cloudflare Worker deployed: `https://wildstack-license-api.royal-surf-6519.workers.dev`
+- D1 SQLite database `wildstack-licenses` created (region: WEUR)
+- Schema live, 9 demo keys inserted (3 per plugin)
+- App wired to validation URL via UserDefaults
+- Key format: `WS-{AE|ID|PS}-XXXX-XXXX-XXXX`
 
 ### Three Plugins: All Connected
 
@@ -71,7 +79,7 @@ These values must be updated before production:
 | Release feed URL | `PluginStore.swift:20` | `intothewild-dev.github.io/.../release-feed.json` |
 | Sparkle appcast | `Info.plist` (SUFeedURL) | `intothewild-dev.github.io/.../appcast.xml` |
 | Purchase page URL | UserDefaults `WildStack.license.purchaseURL` | `https://intothewild.dev/purchase` |
-| License validation API | UserDefaults `WildStack.license.validationURL` | *(not set — local validation)* |
+| License validation API | UserDefaults `WildStack.license.validationURL` | `https://wildstack-license-api.royal-surf-6519.workers.dev/api/v1/validate` ✅ |
 | Bundle ID | `Info.plist` | `com.wildagency.WildStackUpdater` |
 
 ### Changing default URLs (without UserDefaults)
@@ -114,19 +122,19 @@ defaults delete com.wildagency.WildStackUpdater
 
 ## Next Steps
 
-### Immediate
-- [ ] **UXP loading strategy** — decide whether to use UXP Dev Tool for distribution or switch to `.ccx` packaging only
-- [ ] **Live release feed** — add PS plugin entry to GitHub Pages feed
-- [ ] **GitHub Releases** — create release zips for all 3 plugins on GitHub
-- [ ] **SHA-256 hashes** — replace `REPLACE_WITH_SHA256` with real hashes
-- [ ] **Test UXP plugins in ID/PS** — verify loading behaviour in production scenario
+### Developer Tasks — blocked on boss confirming pricing
+- [ ] **Set up purchase page** — create `intothewild.dev/purchase`, update `WildStack.license.purchaseURL`
+- [ ] **Package plugins for Exchange** — `.zxp` (AE via ZXPSignCmd), `.ccx` (ID + PS via UXP Dev Tools)
+- [ ] **Sign & notarize the .app** — required before distributing to any other machine (needs Apple Developer account)
+- [ ] **Upload ZIPs to GitHub Releases** — tags `ae-v2.4.0`, `id-v1.0.0`, `ps-v1.0.0`
+- [ ] **Publish feed to GitHub Pages** — push `release-feed.json` to activate live version data
+- [ ] **Test UXP production loading** — confirm ID and PS plugins load outside UXP Developer Tool
 
-### Before Launch
-- [ ] **Package plugins for Exchange** — `.zxp` (AE), `.ccx` (ID, PS)
-- [ ] **Submit to Adobe Exchange** — each plugin as separate listing
-- [ ] **Sign & notarize** the `.app` bundle for distribution
-- [ ] **Backend activation API** — build the license validation server
-- [ ] **Set production URLs** — purchase page, validation API, feed, appcast
+### Boss Tasks
+- [ ] **Confirm pricing** — per plugin or bundle, one-time or subscription → unblocks purchase page
+- [ ] **Add developer to Adobe Exchange account** — `hello@wildstack.studio`
+- [ ] **Prepare listing assets** — 512×512 logo, 3–5 screenshots per plugin, short descriptions
+- [ ] **Submit 3 plugins to Exchange** — once developer provides `.zxp` + `.ccx` files
 
 ### Future
 - [ ] License deactivation / transfer
